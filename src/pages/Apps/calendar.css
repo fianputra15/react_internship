@@ -1,0 +1,66 @@
+.calendar-toolbar {
+  padding-left: 4px!important;
+  padding-right: 4px!important;
+}
+.rbc-time-view, .rbc-month-view {
+  border: 0;
+}
+.rbc-header {
+  font-weight: 500;
+  text-align: right;
+}
+.rbc-header + .rbc-header {
+  border-left: 0;
+}
+
+@media (max-width: 959.95px) {
+  .rbc-month-view {
+    height: 100%;
+    height: calc(100vh - 160px);
+  }
+}
+@media (max-width: 599px) {
+  .rbc-month-view {
+    width: 100%;
+    overflow-y: hidden;
+    min-height: .01%;
+    overflow-x: auto;
+  }
+  .rbc-month-view > * {
+    width: 700px;
+  }
+}
+@media (min-width: 600px) {
+  .rbc-month-view {
+    height: 100%;
+    height: calc(100vh - 176px);
+  }
+}
+@media (min-width: 960px) {
+  .rbc-month-view {
+    height: 100%;
+    height: calc(100vh - 192px);
+  }
+}
+.rbc-event {
+  background-color: #3f51b5;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.rbc-day-slot .rbc-event {
+  border-color:#ffffff;
+}
+.theme-dark .rbc-time-content,
+.theme-dark .rbc-header,
+.theme-dark .rbc-month-row + .rbc-month-row,
+.theme-dark .rbc-day-bg + .rbc-day-bg,
+.theme-dark .rbc-time-content > * + * > *,
+.theme-dark .rbc-day-slot .rbc-time-slot,
+.theme-dark .rbc-timeslot-group,
+.theme-dark .rbc-time-header-content
+ {
+  border-color:rgba(0, 0, 0, 0.12);
+}
+.theme-dark .rbc-off-range-bg {
+  background: rgba(6, 6, 6, 0.10);
+}

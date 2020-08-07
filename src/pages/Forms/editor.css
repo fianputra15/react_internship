@@ -1,0 +1,8 @@
+quill-editor {
+  display: block;
+  border: 0;
+}
+.ql-container.ql-snow,
+.ql-toolbar.ql-snow {
+  border: 0;
+}

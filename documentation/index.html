@@ -1,0 +1,864 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h5>Primer - React Material Design Admin Template</h5>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h6>Documentation</h6>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#cli" class="mdl-layout__tab">Getting started</a>
+          <a href="#folder" class="mdl-layout__tab">Folder structure</a>
+          <a href="#routes" class="mdl-layout__tab">Routes</a>
+          <a href="#helpers" class="mdl-layout__tab">CSS Helpers</a>
+          <a href="#td" class="mdl-layout__tab">3rd Party</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="column bl">
+              <h4>
+               Overview
+              </h4>
+              <p>
+                This documentation is to help you understand the template's structure. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML, CSS and JS knowledge is required to customize this template.
+              </p>
+              <p>
+                If you have any questions that are beyond the scope of this help file, please feel free to get in touch.
+              </p>
+              <div class="alert alert-info">
+                Support requests can go through the form
+                <a href="http://themeforest.net/user/iamnyasha/?ref=iamnyasha" target="_blank">
+                  on my ThemeForest profile page
+                </a>
+                or via email.
+              </div>
+              <p>
+                Support for my items includes:
+              </p>
+              <ul class="toc">
+                <a>
+                  Responding to questions or problems regarding the item and its features
+                </a>
+                <a>
+                  Fixing bugs and reported issues
+                </a>
+                <a>
+                  Providing updates to ensure compatibility with new software versions
+                </a>
+              </ul>
+              <p>
+                Item support does not include:
+              </p>
+              <ul class="toc">
+                <a>
+                  Customization and installation services
+                </a>
+                <a>
+                  Support for third party software and plug-ins
+                </a>
+              </ul>
+              <p>
+                Before seeking support please:
+              </p>
+              <ul class="toc">
+                <a>
+                  Make sure your question is a valid item Issue and not a customization request.
+                </a>
+                <a>
+                  Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.
+                </a>
+                <a>
+                  Make sure to double check the item FAQs.
+                </a>
+                <a>
+                  If you have customized your item and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.
+                </a>
+                <a>
+                  Most of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.
+                </a>
+                <a>
+                  Make sure to state the name of the item you are having issues with when requesting support via ThemeForest.
+                </a>
+              </ul>
+              <h5 class="mt25">
+                What is it?
+              </h5>
+              <p>
+                Primer is a creative material design admin template built for React. It comes out of the box with support for RTL and comes with light and dark colour schemes. With this, you get all you need to start working on your SAAS, CRM, CMS or dashboard based project.
+              </p>
+              <p>
+                Once you've purchased Primer please consider giving a 5 star rating, it helps in pushing out more updates and adding a lot more features.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="cli">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Getting started</h4>
+
+              <p>This template is built with create-react-app and requires Node and NPM or YARN to be installed.</p>
+
+              <h5>1. Installing the prerequisites</h5>
+              <p><strong>Node.js and NPM:</strong> You can download Node.js from <a href="https://nodejs.org">https://nodejs.org</a>. NPM comes bundled with Node.js</p>
+              <p>For yarn, you can checkout <a href="https://yarnpkg.com/en/docs/install">these</a> installation instructions.</p>
+
+              <h5>2. Installing the packages</h5>
+              <p>Before proceding you'll need to install packages. You can do this by running <strong>npm install / yarn install</strong> from the root of your project to install all the necessary dependencies.</p>
+
+              <h5>3. .env variables</h5>
+              <p>In order to use Google maps, openweather and alphavantage you'll need to add the API keys inside the .env file in the root of your project. A sample.env file is already provided, use this to add your api keys.</p>
+              <p>To get a google map api key follow this link <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">https://developers.google.com/maps/documentation/javascript/get-api-key</a></p>
+              <p>To get an open weather api key follow this link <a href="https://openweathermap.org/appid">https://openweathermap.org/appid</a> </p>
+              <p>To get an alphavantage api key follow this link <a href="https://www.alphavantage.co/support/#api-key">https://www.alphavantage.co/support/#api-key</a> </p>
+
+              <h5>4. Running your project</h5>
+              <p>Run `npm start or yarn start` to launch a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.</p>
+              <p>To create a production ready build for deployment you can run `npm run build or yarn build`</p>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="folder">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Folder Structure</h4>
+              <pre>
+.
+├── README.md
+├── documentation
+│   ├── assets
+│   │   ├── material.css
+│   │   ├── material.js
+│   │   ├── material.min.css
+│   │   ├── material.min.css.map
+│   │   └── material.min.js
+│   ├── images
+│   │   ├── android-desktop.png
+│   │   ├── favicon.png
+│   │   └── ios-desktop.png
+│   ├── index.html
+│   └── styles.css
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── static
+│       ├── fonts
+│       │   └── pe
+│       │       ├── css
+│       │       │   ├── helper.css
+│       │       │   ├── helper.min.css
+│       │       │   ├── pe-icon-set-weather.css
+│       │       │   └── pe-icon-set-weather.min.css
+│       │       └── fonts
+│       │           ├── pe-icon-set-weather.eot
+│       │           ├── pe-icon-set-weather.svg
+│       │           ├── pe-icon-set-weather.ttf
+│       │           └── pe-icon-set-weather.woff
+│       ├── images
+│       │   ├── avatar.jpg
+│       │   ├── face1.jpg
+│       │   ├── face2.jpg
+│       │   ├── face3.jpg
+│       │   ├── face4.jpg
+│       │   ├── face5.jpg
+│       │   ├── face6.jpg
+│       │   ├── face7.jpg
+│       │   ├── logo-dark.svg
+│       │   ├── logo.svg
+│       │   └── unsplash
+│       │       ├── 1.jpg
+│       │       ├── 10.jpg
+│       │       ├── 11.jpg
+│       │       ├── 12.jpg
+│       │       ├── 13.jpg
+│       │       ├── 14.jpg
+│       │       ├── 15.jpg
+│       │       ├── 16.jpg
+│       │       ├── 17.jpg
+│       │       ├── 18.jpg
+│       │       ├── 19.jpg
+│       │       ├── 2.jpg
+│       │       ├── 20.jpg
+│       │       ├── 21.jpg
+│       │       ├── 22.jpg
+│       │       ├── 3.jpg
+│       │       ├── 4.jpg
+│       │       ├── 5.jpg
+│       │       ├── 6.jpg
+│       │       ├── 7.jpg
+│       │       ├── 8.jpg
+│       │       ├── 9.jpg
+│       │       └── fashion3.jpg
+│       └── styles
+│           └── app.css
+└── src
+    ├── components
+    │   ├── ActivityStream
+    │   │   └── ActivityStream.js
+    │   ├── AppProvider
+    │   │   ├── AppContext.js
+    │   │   └── AppProvider.js
+    │   ├── Cards
+    │   │   ├── CartCard.js
+    │   │   ├── ImageStatCard.js
+    │   │   ├── MapCard.js
+    │   │   ├── NewsCard.js
+    │   │   ├── PostCard.js
+    │   │   ├── ProfileCard.js
+    │   │   ├── StatCard.js
+    │   │   └── WeatherCard.js
+    │   ├── Demo
+    │   │   └── Example.js
+    │   ├── Header
+    │   │   └── Header.js
+    │   ├── Message
+    │   │   ├── Item.js
+    │   │   └── Message.js
+    │   ├── NotificationCenter
+    │   │   └── NotificationCenter.js
+    │   ├── Pricing
+    │   │   └── Pricing.js
+    │   ├── Sidebar
+    │   │   ├── Sidebar.js
+    │   │   └── SidebarItem.js
+    │   ├── Timeline
+    │   │   └── Timeline.js
+    │   ├── Workspace
+    │   │   └── Workspace.js
+    │   ├── Wrapper
+    │   │   └── Wrapper.js
+    │   └── index.js
+    ├── containers
+    │   └── Dashboard.js
+    ├── helpers.js
+    ├── index.js
+    ├── pages
+    │   ├── Apps
+    │   │   ├── Calendar.js
+    │   │   ├── Chat.js
+    │   │   ├── Media.js
+    │   │   ├── Messages.js
+    │   │   ├── Social.js
+    │   │   └── calendar.css
+    │   ├── Authentication
+    │   │   ├── Lockscreen.js
+    │   │   ├── PasswordReset.js
+    │   │   ├── Signin.js
+    │   │   └── Signup.js
+    │   ├── Charts
+    │   │   └── Charts.js
+    │   ├── Documentation
+    │   ├── Ecommerce
+    │   │   ├── Detail.js
+    │   │   └── Products.js
+    │   ├── Errors
+    │   │   ├── BackendError.js
+    │   │   └── NotFound.js
+    │   ├── Forms
+    │   │   ├── Editor.js
+    │   │   └── editor.css
+    │   ├── Home
+    │   │   └── Home.js
+    │   ├── Maps
+    │   │   ├── Google.js
+    │   │   └── Leaflet.js
+    │   ├── Material
+    │   │   ├── app-bar.js
+    │   │   ├── autocomplete.js
+    │   │   ├── avatars.js
+    │   │   ├── badges.js
+    │   │   ├── bottom-navigation.js
+    │   │   ├── buttons.js
+    │   │   ├── cards.js
+    │   │   ├── chips.js
+    │   │   ├── dialogs.js
+    │   │   ├── dividers.js
+    │   │   ├── drawers.js
+    │   │   ├── expansion-panels.js
+    │   │   ├── grid-list.js
+    │   │   ├── lists.js
+    │   │   ├── menus.js
+    │   │   ├── paper.js
+    │   │   ├── pickers.js
+    │   │   ├── progress.js
+    │   │   ├── selection-controls.js
+    │   │   ├── selects.js
+    │   │   ├── snackbars.js
+    │   │   ├── steppers.js
+    │   │   ├── tables.js
+    │   │   ├── tabs.js
+    │   │   ├── text-fields.js
+    │   │   └── tooltips.js
+    │   ├── Pages
+    │   │   ├── Blank.js
+    │   │   ├── Invoice.js
+    │   │   ├── Pricing.js
+    │   │   └── Timeline.js
+    │   ├── Taskboard
+    │   │   └── Taskboard.js
+    │   ├── Widgets
+    │   │   └── Widgets.js
+    │   └── index.js
+    ├── registerServiceWorker.js
+    ├── routes.js
+    ├── styles
+    │   ├── Chat.js
+    │   ├── Dashboard.js
+    │   ├── Ecommerce.js
+    │   ├── EcommerceDetail.js
+    │   ├── Header.js
+    │   ├── MessageItem.js
+    │   ├── Messages.js
+    │   ├── NotificationCenter.js
+    │   ├── Pricing.js
+    │   ├── Session.js
+    │   ├── Sidebar.js
+    │   ├── SidebarItem.js
+    │   ├── Social.js
+    │   ├── StatCard.js
+    │   ├── Stream.js
+    │   ├── Taskboard.js
+    │   ├── Timeline.js
+    │   ├── Widget.js
+    │   ├── Workspace.js
+    │   ├── Wrapper.js
+    │   └── variables.js
+    └── utils
+        ├── demos
+        │   ├── app-bar
+        │   │   ├── ButtonAppBar.js
+        │   │   ├── MenuAppBar.js
+        │   │   ├── SimpleAppBar.js
+        │   │   └── app-bar.md
+        │   ├── autocomplete
+        │   │   ├── IntegrationAutosuggest.js
+        │   │   ├── IntegrationDownshift.js
+        │   │   ├── IntegrationReactSelect.js
+        │   │   └── autocomplete.md
+        │   ├── avatars
+        │   │   ├── IconAvatars.js
+        │   │   ├── ImageAvatars.js
+        │   │   ├── LetterAvatars.js
+        │   │   └── avatars.md
+        │   ├── badges
+        │   │   ├── SimpleBadge.js
+        │   │   └── badges.md
+        │   ├── bottom-navigation
+        │   │   ├── LabelBottomNavigation.js
+        │   │   ├── SimpleBottomNavigation.js
+        │   │   └── bottom-navigation.md
+        │   ├── buttons
+        │   │   ├── ButtonBases.js
+        │   │   ├── ButtonSizes.js
+        │   │   ├── ContainedButtons.js
+        │   │   ├── CustomizedButtons.js
+        │   │   ├── FloatingActionButtonZoom.js
+        │   │   ├── FloatingActionButtons.js
+        │   │   ├── IconButtons.js
+        │   │   ├── IconLabelButtons.js
+        │   │   ├── OutlinedButtons.js
+        │   │   ├── TextButtons.js
+        │   │   └── buttons.md
+        │   ├── cards
+        │   │   ├── MediaControlCard.js
+        │   │   ├── RecipeReviewCard.js
+        │   │   ├── SimpleCard.js
+        │   │   ├── SimpleMediaCard.js
+        │   │   └── cards.md
+        │   ├── chips
+        │   │   ├── Chips.js
+        │   │   ├── ChipsArray.js
+        │   │   └── chips.md
+        │   ├── dialogs
+        │   │   ├── AlertDialog.js
+        │   │   ├── AlertDialogSlide.js
+        │   │   ├── ConfirmationDialog.js
+        │   │   ├── FormDialog.js
+        │   │   ├── FullScreenDialog.js
+        │   │   ├── ResponsiveDialog.js
+        │   │   ├── SimpleDialog.js
+        │   │   └── dialogs.md
+        │   ├── dividers
+        │   │   ├── InsetDividers.js
+        │   │   ├── ListDividers.js
+        │   │   └── dividers.md
+        │   ├── drawers
+        │   │   ├── ClippedDrawer.js
+        │   │   ├── MiniDrawer.js
+        │   │   ├── PermanentDrawer.js
+        │   │   ├── PersistentDrawer.js
+        │   │   ├── ResponsiveDrawer.js
+        │   │   ├── SwipeableTemporaryDrawer.js
+        │   │   ├── TemporaryDrawer.js
+        │   │   ├── drawers.md
+        │   │   └── tileData.js
+        │   ├── expansion-panels
+        │   │   ├── ControlledExpansionPanels.js
+        │   │   ├── DetailedExpansionPanel.js
+        │   │   ├── SimpleExpansionPanel.js
+        │   │   └── expansion-panels.md
+        │   ├── grid-list
+        │   │   ├── AdvancedGridList.js
+        │   │   ├── ImageGridList.js
+        │   │   ├── SingleLineGridList.js
+        │   │   ├── TitlebarGridList.js
+        │   │   ├── grid-list.md
+        │   │   └── tileData.js
+        │   ├── lists
+        │   │   ├── CheckboxList.js
+        │   │   ├── CheckboxListSecondary.js
+        │   │   ├── FolderList.js
+        │   │   ├── InsetList.js
+        │   │   ├── InteractiveList.js
+        │   │   ├── NestedList.js
+        │   │   ├── PinnedSubheaderList.js
+        │   │   ├── SimpleList.js
+        │   │   ├── SwitchListSecondary.js
+        │   │   └── lists.md
+        │   ├── menus
+        │   │   ├── FadeMenu.js
+        │   │   ├── ListItemComposition.js
+        │   │   ├── LongMenu.js
+        │   │   ├── MenuListComposition.js
+        │   │   ├── SimpleListMenu.js
+        │   │   ├── SimpleMenu.js
+        │   │   └── menus.md
+        │   ├── paper
+        │   │   ├── PaperSheet.js
+        │   │   └── paper.md
+        │   ├── pickers
+        │   │   ├── DateAndTimePickers.js
+        │   │   ├── DatePickers.js
+        │   │   ├── TimePickers.js
+        │   │   └── pickers.md
+        │   ├── progress
+        │   │   ├── CircularDeterminate.js
+        │   │   ├── CircularIndeterminate.js
+        │   │   ├── CircularIntegration.js
+        │   │   ├── CircularStatic.js
+        │   │   ├── DelayingAppearance.js
+        │   │   ├── LinearBuffer.js
+        │   │   ├── LinearDeterminate.js
+        │   │   ├── LinearIndeterminate.js
+        │   │   ├── LinearQuery.js
+        │   │   └── progress.md
+        │   ├── selection-controls
+        │   │   ├── CheckboxLabels.js
+        │   │   ├── Checkboxes.js
+        │   │   ├── CheckboxesGroup.js
+        │   │   ├── CustomizedSwitches.js
+        │   │   ├── RadioButtons.js
+        │   │   ├── RadioButtonsGroup.js
+        │   │   ├── SwitchLabels.js
+        │   │   ├── Switches.js
+        │   │   ├── SwitchesGroup.js
+        │   │   └── selection-controls.md
+        │   ├── selects
+        │   │   ├── ControlledOpenSelect.js
+        │   │   ├── DialogSelect.js
+        │   │   ├── MultipleSelect.js
+        │   │   ├── NativeSelects.js
+        │   │   ├── SimpleSelect.js
+        │   │   └── selects.md
+        │   ├── snackbars
+        │   │   ├── ConsecutiveSnackbars.js
+        │   │   ├── CustomizedSnackbars.js
+        │   │   ├── DirectionSnackbar.js
+        │   │   ├── FabIntegrationSnackbar.js
+        │   │   ├── FadeSnackbar.js
+        │   │   ├── LongTextSnackbar.js
+        │   │   ├── PositionedSnackbar.js
+        │   │   ├── SimpleSnackbar.js
+        │   │   └── snackbars.md
+        │   ├── steppers
+        │   │   ├── DotsMobileStepper.js
+        │   │   ├── HorizontalLinearAlternativeLabelStepper.js
+        │   │   ├── HorizontalLinearStepper.js
+        │   │   ├── HorizontalNonLinearAlternativeLabelStepper.js
+        │   │   ├── HorizontalNonLinearStepper.js
+        │   │   ├── HorizontalNonLinearStepperWithError.js
+        │   │   ├── ProgressMobileStepper.js
+        │   │   ├── SwipeableTextMobileStepper.js
+        │   │   ├── TextMobileStepper.js
+        │   │   ├── VerticalLinearStepper.js
+        │   │   └── steppers.md
+        │   ├── tables
+        │   │   ├── CustomPaginationActionsTable.js
+        │   │   ├── CustomizedTable.js
+        │   │   ├── EnhancedTable.js
+        │   │   ├── SimpleTable.js
+        │   │   └── tables.md
+        │   ├── tabs
+        │   │   ├── CenteredTabs.js
+        │   │   ├── CustomizedTabs.js
+        │   │   ├── DisabledTabs.js
+        │   │   ├── FullWidthTabs.js
+        │   │   ├── IconLabelTabs.js
+        │   │   ├── IconTabs.js
+        │   │   ├── ScrollableTabsButtonAuto.js
+        │   │   ├── ScrollableTabsButtonForce.js
+        │   │   ├── ScrollableTabsButtonPrevent.js
+        │   │   ├── SimpleTabs.js
+        │   │   ├── TabsWrappedLabel.js
+        │   │   └── tabs.md
+        │   ├── text-fields
+        │   │   ├── ComposedTextField.js
+        │   │   ├── CustomizedInputs.js
+        │   │   ├── FormattedInputs.js
+        │   │   ├── InputAdornments.js
+        │   │   ├── InputWithIcon.js
+        │   │   ├── Inputs.js
+        │   │   ├── TextFieldMargins.js
+        │   │   ├── TextFields.js
+        │   │   └── text-fields.md
+        │   └── tooltips
+        │       ├── ControlledTooltips.js
+        │       ├── PositionedTooltips.js
+        │       ├── SimpleTooltips.js
+        │       └── tooltips.md
+        └── mock
+            ├── activity.js
+            ├── calendar.js
+            ├── chart.js
+            ├── chats.js
+            ├── contacts.js
+            ├── dashboard.js
+            ├── feed.js
+            ├── index.js
+            ├── invoice.js
+            ├── messages.js
+            ├── notifications.js
+            ├── pricing.js
+            ├── product.js
+            ├── reviews.js
+            ├── taskboard.js
+            └── timeline.js
+              </pre>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="routes">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Dashboard routes</h4>
+
+              <p>Dashboard routes are dynamically defined in /src/routes.js.</p>
+              <h6>For link routes use this format</h6>
+              <pre>
+[{
+  path: '/widgets',
+  name: 'Widgets',
+  type: 'link',
+  icon: PhotoIcon,
+  component: Widgets
+  badge: {
+    type: 'error',
+    value: '10'
+  }
+}]
+              </pre>
+              <p>Where:</p>
+              <ul class="">
+                <a>path - path to your route</a>
+                <a>name - the text appearing in the sidebar</a>
+                <a>type - nav link type. Can either be a link, submenu or external</a>
+                <a>icon - icon element displayed in the sidebar</a>
+                <a>badge - (optional) used to display the badge element. This is an object which takes in value and type with type being either primary, secondary or error</a>
+                <a>component - the react component to render</a>
+              </ul>
+
+              <h6>For sub menus use this format</h6>
+              <pre>
+[{
+  path: '/material',
+  name: 'Material',
+  type: 'submenu',
+  icon: EqualizerIcon,
+  badge: {
+    type: 'error',
+    value: '10'
+  },
+  children: [{
+      path: '/appbar',
+      name: 'App Bar',
+      component: AppBar
+    }
+  }]
+}]
+              </pre>
+              <p>Where: </p>
+              <ul class="">
+                <a>path - path to your route</a>
+                <a>name - the text appearing in the sidebar</a>
+                <a>type - nav link type. Can either be a link, submenu or external</a>
+                <a>icon - icon element displayed in the sidebar</a>
+                <a>badge - (optional) used to display the badge element. This is an object which takes in value and type with type being either primary, secondary or error</a>
+                <a>Children - an array of submenu objects. The object takes in path, name and component</a>
+                <a>component - the react component to render</a>
+              </ul>
+
+              <h6>For external routes use this format</h6>
+              <pre>
+[{
+  path: 'http://reactprimer.nyasha.me/docs',
+  name: 'Documentation',
+  type: 'external',
+  icon: LocalLibraryIcon,
+  badge: {
+    type: 'error',
+    value: '10'
+  }
+}]
+              </pre>
+              <p>Where:</p>
+              <ul class="">
+                <a>path - link to open</a>
+                <a>name - the text appearing in the sidebar</a>
+                <a>type - nav link type. Can either be a link, submenu or external</a>
+                <a>icon - icon element displayed in the sidebar</a>
+                <a>badge - (optional) used to display the badge element. This is an object which takes in value and type with type being either primary, secondary or error</a>
+              </ul>
+
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="helpers">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="column bl">
+                <h3 class="page-title">
+                  Helper classes
+                </h3>
+                <p>
+                  These are all the available helper classes used in the template
+                </p>
+                <h5 class="mt25">
+                  General
+                </h5>
+                <ul class="">
+                  <a>
+                    <code>.radius-none</code> (no round corners)
+                  </a>
+                  <a>
+                    <code>.radius-round</code> (border corners based on $border-radius-base)
+                  </a>
+                  <a>
+                    <code>.radius-circle</code> (circle radius corners)
+                  </a>
+                  <a>
+                    <code>.overflow-visible</code>
+                  </a>
+                  <a>
+                    <code>.overflow-hidden</code>
+                  </a>
+                  <a>
+                    <code>.overflow-auto</code>
+                  </a>
+                  <a>
+                    <code>.block</code> (display block)
+                  </a>
+                  <a>
+                    <code>.button-block</code>
+                  </a>
+                  <a>
+                    <code>.inline-block</code>
+                  </a>
+                  <a>
+                    <code>.center-block</code>
+                  </a>
+                  <a>
+                    <code>.relative</code> (position relative)
+                  </a>
+                  <a>
+                    <code>.fixed</code>
+                  </a>
+                  <a>
+                    <code>.absolute</code>
+                  </a>
+                  <a>
+                    <code>.shadow-none</code>
+                  </a>
+                  <a>
+                    <code>.border-none</code>
+                  </a>
+                  <a>
+                    <code>.background-none</code>
+                  </a>
+                </ul>
+
+                <h5 class="mt25">
+                  Spacing
+                </h5>
+                <p>Spacing classes are named using the format: {property}{sides}-{size}</p>
+                <p><b>Where property is one of:</b></p>
+                <ul class="">
+                  <a>m - for classes that set margin</a>
+                  <a>p - for classes that set padding</a>
+                </ul>
+                <p><b>Where sides is one of:</b></p>
+                <ul class="">
+                  <a><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></a>
+                  <a><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></a>
+                  <a><code>l</code> - for classes that set <code>margin-left</code> or <code>padding-left</code></a>
+                  <a><code>r</code> - for classes that set <code>margin-right</code> or <code>padding-right</code></a>
+                  <a><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></a>
+                  <a><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></a>
+                  <a><code>a</code> - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</a>
+                </ul>
+                <p><b>Where size is one of:</b></p>
+                <ul class="">
+                  <a><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></a>
+                  <a><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer-x</code> or <code>$spacer-y</code></a>
+                  <a><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer-x * 1.5</code> or <code>$spacer-y * 1.5</code></a>
+                  <a><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer-x * 3</code> or <code>$spacer-y * 3</code></a>
+                </ul>
+                <h5 class="mt25">
+                  Text
+                </h5>
+                <ul class="">
+                  <a>
+                    <code>.text-justify</code>
+                  </a>
+                  <a>
+                    <code>.text-nowrap</code>
+                  </a>
+                  <a>
+                    <code>.text-truncate</code>
+                  </a>
+                  <a>
+                    <code>.text-{xs, sm, md, lg}-{left, center, right}</code>
+                  </a>
+
+                  <a>
+                    <code>.text-lowercase</code>
+                  </a>
+                  <a>
+                    <code>.text-uppercase</code>
+                  </a>
+                  <a>
+                    <code>.text-capitalize</code>
+                  </a>
+                  <a>
+                    <code>.text-xs</code>
+                  </a>
+                  <a>
+                    <code>.text-sm</code>
+                  </a>
+                  <a>
+                    <code>.text-md</code>
+                  </a>
+                  <a>
+                    <code>.text-lg</code>
+                  </a>
+                  <a>
+                    <code>.text-xl</code>
+                  </a>
+                  <a>
+                    <code>.text-xxl</code>
+                  </a>
+                  <a>
+                    <code>.text-weight-normal</code>
+                  </a>
+                  <a>
+                    <code>.text-weight-bold</code>
+                  </a>
+                  <a>
+                    <code>.text-italic</code>
+                  </a>
+                  <a>
+                    <code>.text-hide</code>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="td">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>3rd party components</h4>
+              <ul>
+                <a href="https://material-ui.com/">Material UI</a>
+                <a href="https://github.com/date-fns/date-fns">date-fns</a>
+                <a href="https://react-leaflet.js.org/en/">React Leaflet</a>
+                <a href="https://github.com/intljusticemission/react-big-calendar">React Big Calendar</a>
+                <a href="https://github.com/jerairrest/react-chartjs-2">React Chartjs 2</a>
+                <a href="https://github.com/tomchentw/react-google-maps">React Google Maps</a>
+                <a href="https://github.com/zenoamaro/react-quill">React Quill</a>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="assets/material.min.js"></script>
+  </body>
+</html>
