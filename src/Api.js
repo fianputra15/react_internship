@@ -1,4 +1,4 @@
 import React from 'react';
 export default {
-    url : "http://localhost:8080"
+    url : "http://54.198.30.208:8080"
 };
